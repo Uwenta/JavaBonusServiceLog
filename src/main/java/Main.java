@@ -2,10 +2,11 @@ public class Main {
   public static void main(String[] args) {
     BonusService service = new BonusService();
 
-    long amount = 1000_60;
+    long amount = 100_060;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    int bonus = (int) service.calculate(amount, registered);
+    System.out.println("Начислено бонусов: " + bonus);
   }
 }
 
